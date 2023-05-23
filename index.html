@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Simple Webpage</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		.section {
+			border: 1px solid black;
+			padding: 20px;
+			margin: 10px;
+		}
+
+		.section-title {
+			background-color: #ff9999;
+			color: white;
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 5px;
+		}
+
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.col {
+			float: left;
+		}
+
+		.col-4 {
+			width: 33.33%;
+		}
+
+		@media (max-width: 991px) {
+			.col-6 {
+				width: 50%;
+			}
+			.col-12 {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.col {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>My Simple Webpage</h1>
+
+	<div class="row">
+		<div class="col col-4">
+			<div class="section">
+				<h2 class="section-title">Chicken</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed dolor velit. Proin suscipit, quam vitae dapibus viverra, metus ipsum congue erat, vel consequat leo est non arcu. Aenean vehicula consectetur nunc vel viverra.</p>
+			</div>
+		</div>
+
+		<div class="col col-4">
+			<div class="section">
+				<h2 class="section-title">Beef</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed dolor velit. Proin suscipit, quam vitae dapibus viverra, metus ipsum congue erat, vel consequat leo est non arcu. Aenean vehicula consectetur nunc vel viverra.</p>
+			</div>
+		</div>
+
+		<div class="col col-4">
+			<div class="section">
+				<h2 class="section-title">Sushi</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed dolor velit. Proin suscipit, quam vitae dapibus viverra, metus ipsum congue erat, vel consequat leo est non arcu. Aenean vehicula consectetur nunc vel viverra.</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// Javascript code goes here
+	</script>
+</body>
+</html>
